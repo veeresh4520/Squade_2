@@ -1,26 +1,25 @@
-# Issue #51: Railway Seat Reservation: Create a populated seat summary object
+# Issue #51: Railway Seat Reservation — Object Lifecycle
 
-**Difficulty:** Hard  
-**Scenario:** Railway Seat Reservation: Create a populated seat summary object. The supplied example uses fixed values so the participant can focus on the behaviour of this one operation.  
-**Topic:** logical errors, conditions, loops, arrays, strings, classes/objects, constructors, and methods  
+**Difficulty:** Hard (CodeChef-style 500–600 range)  
+**Topic:** multi-condition reasoning, arrays, loops, arithmetic, strings, object state, constructors, and methods  
 **Starter file:** `src/main/java/hackathon/Issue51_RailwaySeatObjectCreation.java`
 
 ## Scenario brief
-Railway Seat Reservation: Create a populated seat summary object. The supplied example uses fixed values so the participant can focus on the behaviour of this one operation.. This is a small, isolated exercise; keep the solution within beginner Java and do not add collections or external libraries.
+This challenge sits around the CodeChef beginner 500–600 difficulty range. A realistic workflow is producing an unexpected result even though the sample looks straightforward. Several parts of the program may influence the outcome, so test the supplied case alongside nearby and combined cases.
 
 ## Task
-The railway seat reservation creates a summary object for passenger name “Sample Seat” with 4 active records. The object is created, but the required details are not placed into it before display.
+Trace how information enters an object and how later operations use that state. Compare the displayed result with the values supplied at creation time. Use the existing scenario and sample as evidence, then make the smallest reliable correction that fits the intended behavior. Do not hard-code the sample result or remove the scenario's constraints.
 
 ## Expected output
+
 The program should produce exactly:
 
 ```text
-Passenger name: Sample Seat
-Active seats: 4
+Railway Seat Reservation 2 total=45
 ```
 
 ## Done when
-- [ ] The program produces the expected output.
-- [ ] The supplied scenario and test values are preserved.
-- [ ] You test one additional sensible boundary case.
-- [ ] Your pull request explains the behaviour changed and how you tested it.
+- [ ] The program matches the supplied sample output.
+- [ ] Related edge cases behave consistently with the scenario.
+- [ ] The existing inputs and project structure are preserved.
+- [ ] The change is explained with the reasoning and tests used.
